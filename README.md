@@ -51,6 +51,6 @@ I haven't tried this either.
 
 ## Motivation
 
-I simply don't like snap. Just like I don't like Flatpak etc. It's a convoluted mess, and it takes up precious system resources. Also, Linux Mint developers (I'm a Linux Mint user) seem to dislike snap, albeit for other reasons.
+I simply don't like snap. Just like I don't like Flatpak etc. It's a convoluted mess, and it takes up precious system resources. Also, Linux Mint developers (I'm a Linux Mint user) seem to [dislike snap](https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html), albeit for other reasons.
 
 Since I figured quite a few people would want to install Ubuntu Server without snap, I figured that this would benefit all of us.
