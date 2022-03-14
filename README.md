@@ -29,7 +29,9 @@ $ virt-install \
 --extra-args 'console=ttyS0,115200n8 serial autoinstall ds=nocloud-net;s=http://_gateway:8080/' \
 ```
 
-Note: `_gateway` is a [special host](https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html#Synthetic%20Records) resolved by `systemd-resolved`
+Notes:
+- `_gateway` is a [special host](https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html#Synthetic%20Records) resolved by `systemd-resolved`
+- see the [cloud-init documentation](https://cloudinit.readthedocs.io/en/latest/topics/datasources/nocloud.html) for more information about the command line syntax
 
 If you're installing on a bare metal, you can specify the extra command line arguments at the GRUB menu, or bake the autoinstall file directly to the ISO.
 
