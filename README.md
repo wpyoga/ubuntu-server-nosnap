@@ -6,13 +6,13 @@ Note that the `user-data` file in this repo is a very basic one, see the [autoin
 
 ## How to use
 
-If you're using libvirt, first clone this repo and host the files over http. An easy way to do that would be:
+If you're using libvirt, first clone this repo, make any changes you want, then host the files over http. An easy way to do that would be:
 
 ```sh
 $ python3 -m http.server 8080
 ```
 
-Then, add this to the kernel command line: `autoinstall ds=nocloud-net;s=http://_gateway:8080/`
+For virt-install, add this to the kernel command line: `autoinstall ds=nocloud-net;s=http://_gateway:8080/`
 
 For example:
 
@@ -33,9 +33,13 @@ Notes:
 - `_gateway` is a [special host](https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html#Synthetic%20Records) resolved by `systemd-resolved`
 - see the [cloud-init documentation](https://cloudinit.readthedocs.io/en/latest/topics/datasources/nocloud.html) for more information about the command line syntax
 
+If you just want to test and don't mind the default settings I've provided, then you can use one of these strings to append instead:
+- `autoinstall ds=nocloud-net;s=https://github.com/wpyoga/ubuntu-server-nosnap/raw/master/`
+- `autoinstall ds=nocloud-net;s=https://raw.githubusercontent.com/wpyoga/ubuntu-server-nosnap/master/`
+
 If you're installing on a bare metal, you can specify the extra command line arguments at the GRUB menu, or bake the autoinstall file directly to the ISO.
 
-## How to bake directly to the ISO
+## How to bake it directly to the ISO
 
 If you are pleased with the results and want to create your own custom ISO, see this project: https://github.com/covertsh/ubuntu-autoinstall-generator
 
