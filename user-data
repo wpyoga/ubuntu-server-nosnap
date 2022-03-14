@@ -18,6 +18,7 @@ autoinstall:
   # this base64 is taken from Linux Mint
   - echo UGFja2FnZTogc25hcGQKUGluOiByZWxlYXNlIGE9KgpQaW4tUHJpb3JpdHk6IC0xMAo= | base64 -d | tee /target/etc/apt/preferences.d/nosnap.pref
   # the following commands solve the "Failed unmounting /cdrom." errors when trying to reboot
+  # those errors are unrelated to the removal of snapd
   - systemctl disable --now systemd-udevd-control.socket
   - systemctl disable --now systemd-udevd-kernel.socket
   - systemctl disable --now systemd-udevd.service
