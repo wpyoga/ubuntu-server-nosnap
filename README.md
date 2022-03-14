@@ -51,10 +51,10 @@ This does not work on Ubuntu Desktop.
 
 ## How about netinstall?
 
-I haven't tried this either.
+I haven't tried this.
 
 ## Motivation
 
 I simply don't like snap. Just like I don't like Flatpak etc. It's a convoluted mess, and it takes up precious system resources. Also, Linux Mint developers (I'm a Linux Mint user) seem to [dislike snap](https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html), albeit for other reasons.
 
-So this repo has been created to help people install Ubuntu Server without snap.
+So I created this repo to help people who wish to install Ubuntu Server without snap, to get all the benefits of Ubuntu (as opposed to Debian) and none of the drawbacks of snap.
