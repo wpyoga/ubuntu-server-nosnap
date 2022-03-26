@@ -61,7 +61,7 @@ $ virt-install \
   --network network:default \
   --graphics none \
   --location /srv/iso/ubuntu-20.04.4-live-server-amd64.iso,kernel=casper/vmlinuz,initrd=casper/initrd \
-  --extra-args 'console=ttyS0,115200n8 serial autoinstall ds=nocloud-net;s=https://github.com/wpyoga/ubuntu-server-nosnap/raw/master/'
+  --extra-args 'console=ttyS0,115200n8 serial autoinstall ds=nocloud-net;s=https://tinyurl.com/ubuntu-server-nosnap/'
 ```
 
 If you are installing with video output, for example if you use Proxmox, or if you are installing on a physical server, then you can specify the extra command line arguments at the GRUB menu.
