@@ -46,6 +46,8 @@ Note: see the [cloud-init documentation](https://cloudinit.readthedocs.io/en/lat
 With this method, you can use this repo directly, or fork it and use your own repo. Using this repo as an example, append one of these to the kernel command line:
 - `autoinstall ds=nocloud-net;s=https://github.com/wpyoga/ubuntu-server-nosnap/raw/master/`
 - `autoinstall ds=nocloud-net;s=https://raw.githubusercontent.com/wpyoga/ubuntu-server-nosnap/master/`
+- `autoinstall ds=nocloud-net;s=https://tinyurl.com/2p9e88a3/`
+- `autoinstall ds=nocloud-net;s=https://tinyurl.com/ubuntu-server-nosnap/`
 
 For example, if you use virt-install, you can do this:
 
