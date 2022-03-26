@@ -22,4 +22,4 @@ autoinstall:
   - systemctl disable --now systemd-udevd-control.socket
   - systemctl disable --now systemd-udevd-kernel.socket
   - systemctl disable --now systemd-udevd.service
-  - umount /usr/lib/modules
+  - umount /usr/lib/modules || true
